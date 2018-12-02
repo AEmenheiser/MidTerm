@@ -50,13 +50,12 @@ namespace Librarians.Midterm.App
                         library.SearchAuthor(Console.ReadLine().ToLowerInvariant());
                         break;
                     case '4':
-<<<<<<< HEAD
+
                         library.DisplayBooks();
-=======
+
                         Console.Clear();
-                        library.DisplayBooks
-                            ();
->>>>>>> ed0920bc698ff678e5af42f41a160e07b5ba4bc3
+                        library.DisplayBooks();
+
                         Console.Write("Enter book number to checkout: \n");
                         if (Int32.TryParse(Console.ReadLine(), out number))
                             library.CheckoutBook(number - 1);
@@ -68,8 +67,6 @@ namespace Librarians.Midterm.App
 
                         break;
                     case '5':
-<<<<<<< HEAD
-                        
                             Console.Write("Enter the book number to return: ");
                             if (Int32.TryParse(Console.ReadLine(), out number))
                                 library.ReturnBook(number - 1);
@@ -78,8 +75,6 @@ namespace Librarians.Midterm.App
                             {
                                 Console.WriteLine("Invalid input");
                             }
-                            
-=======
                         Console.Clear();
                         Console.Write("Enter the book number to return: ");
                         if (Int32.TryParse(Console.ReadLine(), out number))
@@ -89,7 +84,6 @@ namespace Librarians.Midterm.App
                             Console.Clear();
                             Console.WriteLine("Invalid input");
                         }
->>>>>>> ed0920bc698ff678e5af42f41a160e07b5ba4bc3
                         break;
                     case '6':
                         Console.Clear();
